@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-st.title("Fill Slope FoS Prediction Model")
-st.write("輸入斜坡參數，即時預測 Factor of Safety")
+st.title("Soil Slope FoS Prediction Model")
+st.write("Input the parameters to instantly predict the Factor of Safety (FoS) for a soil slope")
 
 col1, col2 = st.columns(2)
 with col1:
