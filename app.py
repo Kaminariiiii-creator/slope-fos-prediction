@@ -12,7 +12,7 @@ col1, col2 = st.columns(2)
 with col1:
     height = st.number_input(
         "Height (m)", 
-        min_value=3.0, 
+        min_value=5.0, 
         step=0.5, 
         format="%.2f"
     )
