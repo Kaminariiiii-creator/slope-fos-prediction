@@ -7,13 +7,13 @@ st.write("Input the parameters to instantly predict the Factor of Safety (FoS) f
 
 col1, col2 = st.columns(2)
 with col1:
-    height = st.number_input("Height (m)", value=12.5, min_value=5.0)
-    angle = st.number_input("Angle (degree)", value=38, min_value=20)
+    height = st.number_input("Height (m)", value=0, min_value=1)
+    angle = st.number_input("Angle (degree)", value=0, min_value=1)
     surcharge = st.number_input("Surcharge (kPa)", value=0.0, min_value=0.0)
 
 with col2:
-    phi = st.number_input("phi' (degree)", value=36, min_value=30)
-    c = st.number_input("c' (kPa)", value=2.5, min_value=0.0)
+    phi = st.number_input("phi' (degree)", value=0, min_value=1)
+    c = st.number_input("c' (kPa)", value=0, min_value=0.0)
     gw = st.selectbox("Groundwater", ["Dry", "One-Third"])
     gw_encoded = 0 if gw == "Dry" else 1
 
